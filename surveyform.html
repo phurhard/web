@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link
+rel="stylesheet" type="text/css" href="../css/surveyform.css" />		<title>Survey Form</title>
+	</head>
+	<body>
+		
+		<div id="main">
+			<div id="start"></div>
+			<header id="heading">
+				<h1 id="title">Abidemi survey form</h1>
+				<p id="description">We are pleased to receive your replies</p>
+			</header>
+			<div id="form-area">
+				<form action="#" method="get" id="survey-form">
+					<p id="changed">(*)This fields are important</p>
+					<label id="name-label" for="name">name*:</label>
+					<input type="text" name="username" id="name" placeholder="Enter your name" required="required" maxlength="15" />
+
+					<label id="email-label" for="email">Email*:</label>
+					<input type="email" name="mail" id="email" placeholder="Enter your email" required="required" />
+
+					<label id="number-label" for="number">Age
+						<span id="optional">(optional)*</span>
+					</label>
+					<input type="number" id="number" placeholder="Age" name="age" required="required" min="5" max="15" />
+
+					<p class="position">Which best describes ur position?</p>
+
+					<select name="position" id="dropdown" class="options">
+						<option value="none">Select the one that applies</option>
+						<option value="Agent">Agent</option>
+						<option value="Contractor">Contractor</option>
+						<option value="Wholesaler">Wholesaler</option>
+						<option value="Retailer">Retailer</option>
+					</select>
+					<p class="position">Would you recommend Abidemi to others:</p>
+
+					<label class="radio"><input type="radio" name="Recommendations" value="Surely" checked="checked" />
+
+					Surely</label>
+
+					<label class="radio"><input type="radio" name="Recommendations" value="Maybe" />
+
+					Maybe</label>
+
+					<label class="radio"><input type="radio" name="Recommendations" value="Notsure" />
+
+					Not sure</label>
+					<p class="position">What do you like the most about Abidemi?</p>
+
+					<select name="choice" class="options">
+						<option value="HR">HR</option>
+						<option value="CR">Customer relations</option>
+						<option value="SD">Service delivery</option>
+						<option value="PF">Project finesse</option>
+						<option value="GO">General outlook</option>
+					</select>
+					<p id="improvement">What would you like to be improved or changed in Abidemi?</p>
+					<span id="changed">select all that applies</span>
+					<label class="checkbox"><input type="checkbox" name="improvement" value="HR" />
+
+					HR</label>
+
+					<label class="checkbox"><input type="checkbox" name="improvement" value="SD" />
+
+					Service delivery</label>
+
+					<label class="checkbox"><input type="checkbox" name="improvement" value="PF" />
+
+					Project finesse</label>
+
+					<label class="checkbox"><input type="checkbox" name="improvement" value="GO" />
+
+					General outlook</label>
+
+					<label class="checkbox"><input type="checkbox" name="improvement" value="CR" />
+
+					Customer relations</label>
+
+					<p class="position">Any comments or suggestions?</p>
+					<textarea id="comments" placeholder="Your message..."></textarea>
+					<button id="submit">Submit</button>
+				</form>
+				<p id="copyright">Abidemi&copy</p>
+			</div>
+		</div>
+	</body>
+</html>
