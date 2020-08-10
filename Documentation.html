@@ -1,0 +1,376 @@
+
+<script>https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js</script>
+<!DOCTYPE html>
+<html>
+<head>
+<title>my python doc.</title>
+<link rel="stylesheet" type="text/css" href="../css/Documentation.css">
+	
+</head>
+<body>
+	<nav id="navbar">
+		<header style="text-transform:uppercase; font-size:30px; text-align:center; font-weight:bold;">python documentation</header>
+		<a href="#python_overview" class="nav-link">Python Overview</a>
+		<a href="#Data_types" class="nav-link">Data types</a>
+		<a href="#Python_Variables" class="nav-link">Python Variables</a>
+		<a href="#Hello_World" class="nav-link">Hello world</a>
+		<a href="#If..else,While" class="nav-link">If...else,While</a>
+	</nav>
+	
+	<main id="main-doc">
+		<section class="main-section" id="python_overview">
+			<header style="text-transform:capitalize; font-style:italic;"><h1>python overview</h1></header>
+			<p>
+				<h2>Origin</h2>
+<h3>What is Python?</h3>
+Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+
+			</p>
+			<p><h3>It is used for:</h3>
+
+<ul><li>web development (server-side).
+</li><li>software development.
+</li><li>mathematics.
+</li><li>system scripting etc.</li></ul>
+<h3>What can Python do?</h3><ul>
+<li>Python can be used on a server to create web applications.</li><li>
+Python can be used alongside software to create workflows.</li><li>
+Python can connect to database systems. It can also read and modify files.</li><li>
+Python can be used to handle big data and perform complex mathematics.</li><li>
+Python can be used for rapid prototyping, or for production-ready software development.</li></ul>
+</p>
+<p>
+	<h3>Why Python?</h3>
+<ul><li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).
+</li><li>Python has a simple syntax similar to the English language.
+</li><li>Python has syntax that allows developers to write programs with fewer lines than some other programming languages.
+</li><li>Python runs on an interpreter system, meaning that code can be executed as soon as it is written. This means that prototyping can be very quick.
+</li><li>Python can be treated in a procedural way, an object-orientated way or a functional way.
+</li></ul>
+</p>
+<p><h3>Good to know</h3>
+<ul><li>The most recent major version of Python is Python 3, which we shall be using in this tutorial. However, Python 2, although not being updated with anything other than security updates, is still quite popular.
+</li><li>It is possible to write Python in an Integrated Development Environment, such as Thonny, Pycharm, Netbeans or Eclipse which are particularly useful when managing larger collections of Python files.
+</li>
+<li>Python gives very high piriority to indentation.`
+</li></ul>
+<h3>Python Syntax compared to other programming languages</h3>
+<ul><li>Python was designed for readability, and has some similarities to the English language with influence from mathematics.
+</li><li>~ uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.
+</li><li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose
+</li></ul></p>
+		</section>
+		<section class="main-section" id="Hello_World">
+			<header><h1>Hello World</h1></header>
+			<p>
+It is  a common practice in the programming world for learners of a new language to always begin the language with an hello world example this is also true with python.<br>
+<code>print("Hello World")</code><br>
+The above code is an hello world in python <br>
+Copy the code and paste it in ur IDE run the code and you will see an <code>"Hello World" </code>display on your screen.<br>
+NB: python files ends with a .py extension to enable them to run properly.
+</p>
+		</section>
+		<section class="main-section" id="Python_Variables">
+			<header><h1>Python Variables</h1></header>
+			<p><h3>Creating Variables</h3><br>
+Variables are containers for storing data values.
+
+Unlike other programming languages, Python has no command for declaring a variable.
+
+A variable is created the moment you first assign a value to it.
+<br>
+Example
+<br><code>x = 5<br>
+y = "John"<br>
+print(x)<br>
+print(y)<br>
+</code><br>Variables do not need to be declared with any particular type and can even change type after they have been set.
+<br>
+Example<br>
+<code>x = 4 # x is of type int<br>
+x = "Sally" # x is now of type str<br>
+print(x)<br>
+</code><br>String variables can be declared either by using single or double quotes:
+<br>
+Example<br>
+<code>x = "John"	# is the same as		x = 'John'</code>
+<br><h1>Variable Names</h1><br>
+A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume). <br><h3>Rules for Python variables:</h3><br><ul>
+<li>A variable name must start with a letter or the underscore character</li>
+<li>A variable name cannot start with a number</li>
+<li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+<li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li></ul><br>
+Example<code><br>
+#Legal variable names:<br>
+myvar = "John"<br>
+my_var = "John"<br>
+_my_var = "John"<br>
+myVar = "John"<br>
+MYVAR = "John"<br>
+myvar2 = "John"<br>
+
+#Illegal variable names:<br>
+2myvar = "John"<br>
+my-var = "John"<br>
+my var = "John"<br></code>
+Remember that variable names are case-sensitive
+
+<br>
+<strong>Assign Value to Multiple Variables</strong>
+<br>Python allows you to assign values to multiple variables in one line:
+<br>
+Example<br><code>
+x, y, z = "Orange", "Banana", "Cherry"<br>
+print(x)<br>
+print(y)<br>
+print(z)<br></code>
+And you can assign the same value to multiple variables in one line:
+<br>
+Example<code>
+<br>x = y = z = "Orange"
+<br>print(x)
+<br>print(y)
+<br>print(z)</code>
+<br><h1>Output Variables</h1><br>
+The Python print statement is often used to output variables.<br>
+
+To combine both text and a variable, Python uses the + character:<br>
+
+Example<br><code>
+x = "awesome"<br>
+print("Python is " + x)<br></code>
+You can also use the + character to add a variable to another variable:<br>
+
+Example<br><code>
+x = "Python is "<br>
+y = "awesome"<br>
+z =  x + y<br>
+print(z)<br>
+</code>For numbers, the + character works as a mathematical operator:
+<br>
+Example<code><br>
+x = 5<br>
+y = 10<br>
+print(x + y)<br></code>
+If you try to combine a string and a number, Python will give you an error:<br>
+
+Example<code><br>
+x = 5<br>
+y = "John"<br>
+print(x + y)<br></code></p><p><h3>
+Global Variables</h3><br>
+Variables that are created outside of a function (as in all of the examples above) are known as global variables.
+
+Global variables can be used by everyone, both inside of functions and outside.
+</p><p>
+Example<br>
+Create a variable outside of a function, and use it inside the function<br>
+<code>
+x = "awesome"<br>
+
+def myfunc():<br>
+  print("Python is " + x)<br>
+
+myfunc()<br></code></p><p>
+If you create a variable with the same name inside a function, this variable will be local, and can only be used inside the function. The global variable with the same name will remain as it was, global and with the original value.</p>
+<p>
+Example<br>
+Create a variable inside a function, with the same name as the global variable
+<code><br>
+x = "awesome"<br>
+
+def myfunc():<br>
+  x = "fantastic"<br>
+  print("Python is " + x)<br>
+
+myfunc()
+<br>
+print("Python is " + x)<br></code></p>
+<p><h3>The global Keyword</h3>
+Normally, when you create a variable inside a function, that variable is local, and can only be used inside that function.
+<br>
+To create a global variable inside a function, you can use the global keyword.</p>
+<p>
+Example
+If you use the global keyword, the variable belongs to the global scope:<br>
+<code>
+def myfunc():<br>
+  global x
+  <br>x = "fantastic"
+<br>
+myfunc()
+<br>
+print("Python is " + x)<br></code>
+Also, use the global keyword if you want to change a global variable inside a function.</p>
+
+<p>Example<br>
+To change the value of a global variable inside a function, refer to the variable by using the global keyword:
+
+<code><br>x = "awesome"
+<br>
+def myfunc():
+  <br>global x
+  <br>x = "fantastic"
+<br>
+myfunc()
+<br>
+print("Python is " + x)<br></code>
+
+			</p>
+		</section>
+		<section class="main-section" id="Data_types">
+			<header><h1>Data types<h1></header>
+			<p>In programming, data type is an important concept.
+
+Variables can store data of different types, and different types can do different things.
+
+</p><p>Python has the following data types built-in by default, in these categories:
+
+</p><p>Text Type:	str<br>
+Numeric Types:	int, float, complex<br>
+Sequence Types:	list, tuple, range<br>
+Mapping Type:	dict<br>
+Set Types:	set, frozenset<br>
+Boolean Type:	bool<br>
+Binary Types:	bytes, bytearray, memoryview<br>
+
+</p><p><h3>Python Numbers</h3>
+There are three numeric types in Python:
+<br>
+int<br>
+float<br>
+complex
+</p><p>Variables of numeric types are created when you assign a value to them:
+
+</p><p>Example<br><code>
+x = 1    <br>
+y = 2.8  <br>
+z = 1j   <br></code>
+</p><p>To verify the type of any object in Python, use the type() function:
+
+</p><p>Example<br><code>
+print(type(x))	#Int<br>
+print(type(y))	#float<br>
+print(type(z))	#complex<br></code>
+</p><p><strong>Int:</strong><br>
+Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length.
+<br>
+Example
+<br><em>Integers:</em>
+<code>
+<br>x = 1
+<br>y = 35656222554887711
+<br>z = -3255522
+
+<br>print(type(x))#int
+<br>print(type(y))#int
+<br>print(type(z))#int</code>
+</p><p><strong>Float</strong>
+<br>Float, or "floating point number" is a number, positive or negative, containing one or more decimals.
+<br>
+Example
+<br><em>Floats:</em>
+<code>
+<br>x = 1.10
+<br>y = 1.0
+<br>z = -35.59
+
+<br>print(type(x))#float
+<br>print(type(y))#float
+<br>print(type(z))#float</code><br>
+</p><p>Float can also be scientific numbers with an "e" to indicate the power of 10.
+<br>
+Example
+<em>Floats:</em>
+<code><br>
+x = 35e3
+<br>y = 12E4
+<br>z = -87.7e100
+
+<br>print(type(x))	#float
+<br>print(type(y))	#float
+<br>print(type(z))	#float
+</code></p><p>
+<strong>Complex</strong><br>
+Complex numbers are written with a "j" as the imaginary part:
+<br>
+Example<br>
+<em>Complex:</em><br>
+<code>
+x = 3+5j<br>
+y = 5j<br>
+z = -5j<br>
+
+print(type(x)) #complex<br>
+print(type(y))	#complex<br>
+print(type(z))	#complex<br>
+</code><h3>Type Conversion<br></h3>
+You can convert from one type to another with the int(), float(), and complex() methods:<br>
+
+Example<br>
+Convert from one type to another:
+<br><code>
+x = 1    # int<br>
+y = 2.8  # float<br>
+z = 1j   # complex<br>
+</code>
+#convert from int to float:<br>
+<code>a = float(x)<br></code>
+
+#convert from float to int:<br>
+<code>b = int(y)<br></code>
+
+#convert from int to complex:<br>
+<code>c = complex(x)<br></code>
+<code>
+print(a)	#1.0<br>
+print(b)	#3<br>
+print(c)	#1j<br>
+
+print(type(a))	#float<br>
+print(type(b))	#int<br>
+print(type(c))	#complex<br></code>
+Note: You cannot convert complex numbers into another number type.
+<p>
+<h3>Random Number</h3>
+<br>Python does not have a random() function to make a random number, but Python has a built-in module called random that can be used to make random numbers<br>
+
+Example
+<br>Import the random module, and display a random number between 1 and 9:<br>
+
+<code>import random
+<br>
+print(random.randrange(1, 10))</code>
+<br>
+</p>
+		</section>
+		<section id="If..else,While" class="main-section">
+			<header><h3>If..else,While</h3></header>
+		<p>	<strong>If...else statement:</strong><br>
+The if...else statement is used to check if a logical condition is true else false * you get the joke*<br>
+<code>if(condition):<br>
+	Do this<br>
+Else:<br>
+	Do this</code><br>
+<strong>While:</strong>
+<br>This is is a looping statement used to repeat or check a logical opinion<br>
+<code>i=0<br>
+While(i<=10):<br>
+	print(1+i)<br>
+	++i<br></code>
+the above code will print numbers from 1 to 11</p>
+<p><h3>Declaring a function</h3>
+<br>Function declaration can be done by usig the following synthax
+<br><code>def function_name():<br>
+	function codes</code><br>
+<h3>Importing a library</h3><br>
+Libraries are bunch of codes written by a programmer to make work easier and to prevent reinventing the wheel python has some very cool libraries which can be imported into it
+<br><code>Import math</code> 
+<br>
+<h2>Reference</h2>
+<br>You can read more about python,its strength and weakness on the python official documentation page <a href="https://ww.python.org" target="_blank">click here</a><br>Or take a <a href="https://www.w3schools.com/python/" target="_blank">course here</a></p>
+		</section>
+	</main>
+
+</body>
+</html>
